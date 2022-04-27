@@ -40,19 +40,19 @@ A partir de esto, se determinó que la profundidad óptima de los árboles deber
 Con los valores específicos
 
 ```python
-men students             0.160399
-men professors           0.112066
-women professors         0.238121
-professors/doctorate     0.051018
-professors/masters       0.086136
-professors/bachelors     0.031398
-titular professors       0.071216
-associate professors     0.087614
-professor assistants     0.136652
-plant professors         0.020155
-instructor professors    0.003926
-emeritus professors      0.000000
-visitant professors      0.001298
+men students             0.125163
+men professors           0.131296
+women professors         0.205384
+professors/doctorate     0.046386
+professors/masters       0.086108
+professors/bachelors     0.029837
+titular professors       0.021236
+associate professors     0.158023
+professor assistants     0.176314
+plant professors         0.003836
+instructor professors    0.009130
+emeritus professors      0.002977
+visitant professors      0.004310
 ```
 
 ## Resultados
