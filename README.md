@@ -2,7 +2,7 @@
 Se presentan los resultados del Taller #3 del curso de Introducción a la Ciencia de Datos.
 
 ## Pregunta a Responder
-**Es estadisticamente influyente la cantidad de profesoras en la cantidad de estudiantes mujeres de un pregrado en la Universidad de los Andes en el primer semestre del 2021?**
+**Es estadisticamente influyente la cantidad de profesoras en la cantidad de estudiantes mujeres de un pregrado en la Universidad de los Andes en el primer semestre del 2021? Si la respuesta a esto es sí, qué tan influyente es comparado a otros parámetros?**
 <!--- https://towardsdatascience.com/train-a-regression-model-using-a-decision-tree-70012c22bcc1 --->
 
 ## Datos Utilizados
