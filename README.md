@@ -39,7 +39,7 @@ Vemos que existe un problema de *underfitting*. Entonces, graficamos el error me
 Podemos darnos cuenta de que la profundidad óptima es un valor alrededor de 5. Utilizando el método de K-Fold obtenemos los siguientes parámetros:
 
 ```python
-'max_depth': 1
+'max_depth': 5
 'min_samples_split': 5
 ```
 
