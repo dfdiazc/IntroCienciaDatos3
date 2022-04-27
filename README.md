@@ -17,7 +17,7 @@ Los datos utilizados fueron tomados del Boletín Estadístico Uniandes 2021 disp
 | Derecho	| 589	| 659	| 77 | 51	| 35 | 6 | 0	| 3.50 | 29.10 | 8	| 0	| 0	| 0	| 0 |
 
 ## Procedimiento
-Inicialmente, se identificaron los parámetros que pudieran ser utilizados para realizar un modelo. Esto es, se quitaron del dataset el programa, debido a que es irrelevante para el problema, y la cantidad de estudiantes mujeres, debido a que esto es precisamente lo que se busca predecir.
+Inicialmente, se identificaron los parámetros que pudieran ser utilizados para realizar un modelo. Esto es, se quitaron del dataset el programa de pregrado, debido a que es irrelevante para el problema, y la cantidad de estudiantes mujeres, debido a que esto es precisamente lo que se busca predecir.
 
 Así, utilizando sklearn, se divieron los datos en dos conjuntos: test y train. Igualmente, utilizando esta librería, se realizó inicialmente un bosque aleatorio con 10 árboles de profundidad 5, obteniendo así árboles como el presentado en la siguiente imagen:
 
