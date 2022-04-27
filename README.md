@@ -19,7 +19,7 @@ Los datos utilizados fueron tomados del Boletín Estadístico Uniandes 2021 disp
 ## Procedimiento
 Inicialmente, se identificaron los parámetros que pudieran ser utilizados para realizar un modelo. Esto es, se quitaron del dataset el programa de pregrado, debido a que es irrelevante para el problema, y la cantidad de estudiantes mujeres, debido a que esto es precisamente lo que se busca predecir.
 
-Así, utilizando sklearn, se divieron los datos en dos conjuntos: test y train. Igualmente, utilizando esta librería, se realizó inicialmente un bosque aleatorio con 10 árboles, obteniendo así árboles de profundidad 6 como el presentado en la siguiente imagen:
+Así, utilizando sklearn, se divieron los datos en dos conjuntos: test y train. Igualmente, utilizando esta librería, se realizó inicialmente un bosque aleatorio con 10 árboles, obteniendo así árboles de profundidad 5 como el presentado en la siguiente imagen:
 
 <p align="center">
   <img src="https://github.com/dfdiazc/IntroCienciaDatos3/blob/main/results/random_forests/tree.png?raw=true">
