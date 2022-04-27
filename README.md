@@ -17,7 +17,39 @@ Los datos utilizados fueron tomados del Boletín Estadístico Uniandes 2021 disp
 | Derecho	| 589	| 659	| 77 | 51	| 35 | 6 | 0	| 3.50 | 29.10 | 8	| 0	| 0	| 0	| 0 |
 
 ## Procedimiento
-Inicialmente, se identificaron los parámetros que pudieran ser utilizados para realizar un modelo. Esto es, se quitaron del dataset el programa de pregrado, debido a que es irrelevante para el problema, y la cantidad de estudiantes mujeres, debido a que esto es precisamente lo que se busca predecir.
+
+Inicialmente, utilizando los datos de cantidad de profesoras y estudiantes mujeres, se obtuvo la siguiente gráfica:
+
+<p align="center">
+  <img src="https://github.com/dfdiazc/IntroCienciaDatos3/blob/main/results/decision_trees/data.png?raw=true">
+</p>
+
+Ahora, se realizó un árbol de decisión de profundidad 2, obteniendo el siguiente modelo inicialmente:
+
+<p align="center">
+  <img src="https://github.com/dfdiazc/IntroCienciaDatos3/blob/main/results/decision_trees/initial_model.png?raw=true">
+</p>
+
+Vemos que existe un problema de *underfitting*. Entonces, graficamos el error medio cuadrado para diferentes profundidades del árbol, para así obtener la profundidad óptima que prevenga *underfitting* y *overfitting*:
+
+<p align="center">
+  <img src="https://github.com/dfdiazc/IntroCienciaDatos3/blob/main/results/decision_trees/error.png?raw=true">
+</p>
+
+Podemos darnos cuenta de que la profundidad óptima es un valor alrededor de 5. Utilizando el método de K-Fold obtenemos los siguientes parámetros:
+
+```python
+'max_depth': 1
+'min_samples_split': 5
+```
+
+Luego, el módelo óptimo efectivamente tendrá árboles de profundidad 5, obteniendo así el siguiente modelo:
+
+<p align="center">
+  <img src="https://github.com/dfdiazc/IntroCienciaDatos3/blob/main/results/decision_trees/best_model.png?raw=true">
+</p>
+
+Ahora, se identificaron los parámetros que pudieran ser utilizados para realizar un modelo. Esto es, se quitaron del dataset el programa de pregrado, debido a que es irrelevante para el problema, y la cantidad de estudiantes mujeres, debido a que esto es precisamente lo que se busca predecir.
 
 Así, utilizando sklearn, se divieron los datos en dos conjuntos: test y train. Igualmente, utilizando esta librería, se realizó inicialmente un bosque aleatorio con 10 árboles, obteniendo así árboles de profundidad 5 como el presentado en la siguiente imagen:
 
