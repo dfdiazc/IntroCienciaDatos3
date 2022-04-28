@@ -11,8 +11,8 @@ Los datos utilizados fueron tomados del Boletín Estadístico Uniandes 2021 disp
 | program | men students | women students | men professors | women professors | professors/doctorate | professors/masters | professors/bachelors | titular professors | associate professors | professor assistants | plant professors | instructor professors | emeritus professors | visitant professors |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | Administración | 707 | 495 | 105 | 50 | 55 | 10 | 0 | 4 | 25.5 | 27 | 0 | 1 | 1 | 0.5 |
-| Física | 231 | 95	| 35 | 8 | 23 | 2 | 0 | 4.50 | 16 | 1 | 0 |	0 |	0 |	0 |
 | Matemáticas | 82 | 26 | 61 | 15	| 38 | 9 | 4 | 3.50 | 24 | 4 | 16 | 0 | 0	| 0 |
+| Física | 231 | 95	| 35 | 8 | 23 | 2 | 0 | 4.50 | 16 | 1 | 0 |	0 |	0 |	0 |
 | Música | 133 | 75 | 50 | 15 | 8	| 11 | 2 | 0	| 13.50	| 6	| 0	| 0	| 0	| 1 | 
 | Derecho	| 589	| 659	| 77 | 51	| 35 | 6 | 0	| 3.50 | 29.10 | 8	| 0	| 0	| 0	| 0 |
 
