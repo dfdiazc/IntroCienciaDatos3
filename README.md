@@ -21,7 +21,7 @@ Los datos utilizados fueron tomados del Boletín Estadístico Uniandes 2021 disp
 Inicialmente, utilizando los datos de cantidad de profesoras y estudiantes mujeres, se obtuvo la siguiente gráfica:
 
 <p align="center">
-  <img src="https://github.com/dfdiazc/IntroCienciaDatos3/blob/main/results/=data.png?raw=true">
+  <img src="https://github.com/dfdiazc/IntroCienciaDatos3/blob/main/results/data.png?raw=true">
 </p>
 
 Ahora, se identificaron los parámetros que pudieran ser utilizados para realizar un modelo. Esto es, se quitaron del dataset el programa de pregrado, debido a que es irrelevante para el problema, y la cantidad de estudiantes mujeres, debido a que esto es precisamente lo que se busca predecir.
