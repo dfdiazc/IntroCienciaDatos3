@@ -21,71 +21,60 @@ Los datos utilizados fueron tomados del Boletín Estadístico Uniandes 2021 disp
 Inicialmente, utilizando los datos de cantidad de profesoras y estudiantes mujeres, se obtuvo la siguiente gráfica:
 
 <p align="center">
-  <img src="https://github.com/dfdiazc/IntroCienciaDatos3/blob/main/results/decision_trees/data.png?raw=true">
-</p>
-
-Ahora, se realizó un árbol de decisión de profundidad 2, obteniendo el siguiente modelo inicialmente:
-
-<p align="center">
-  <img src="https://github.com/dfdiazc/IntroCienciaDatos3/blob/main/results/decision_trees/initial_model.png?raw=true">
-</p>
-
-Vemos que existe un problema de *underfitting*. Entonces, graficamos el error medio cuadrado para diferentes profundidades del árbol, para así obtener la profundidad óptima que prevenga *underfitting* y *overfitting*:
-
-<p align="center">
-  <img src="https://github.com/dfdiazc/IntroCienciaDatos3/blob/main/results/decision_trees/error.png?raw=true">
-</p>
-
-Podemos darnos cuenta de que la profundidad óptima es un valor alrededor de 5. Utilizando el método de K-Fold obtenemos los siguientes parámetros:
-
-```python
-'max_depth': 5
-'min_samples_split': 5
-```
-
-Luego, el módelo óptimo efectivamente tendrá árboles de profundidad 5, obteniendo así el siguiente modelo:
-
-<p align="center">
-  <img src="https://github.com/dfdiazc/IntroCienciaDatos3/blob/main/results/decision_trees/best_model.png?raw=true">
+  <img src="https://github.com/dfdiazc/IntroCienciaDatos3/blob/main/results/data.png?raw=true">
 </p>
 
 Ahora, se identificaron los parámetros que pudieran ser utilizados para realizar un modelo. Esto es, se quitaron del dataset el programa de pregrado, debido a que es irrelevante para el problema, y la cantidad de estudiantes mujeres, debido a que esto es precisamente lo que se busca predecir.
 
-Así, utilizando sklearn, se divieron los datos en dos conjuntos: test y train. Igualmente, utilizando esta librería, se realizó inicialmente un bosque aleatorio con 10 árboles, obteniendo así árboles de profundidad 5 como el presentado en la siguiente imagen:
+Así, utilizando sklearn, se dividieron los datos en dos conjuntos: test y train. Igualmente, utilizando esta librería, se realizó inicialmente un bosque aleatorio con 10 árboles, obteniendo así árboles de decisión como el presentado en la siguiente imagen:
 
 <p align="center">
-  <img src="https://github.com/dfdiazc/IntroCienciaDatos3/blob/main/results/random_forests/tree.png?raw=true">
+  <img src="https://github.com/dfdiazc/IntroCienciaDatos3/blob/main/results/tree.png?raw=true">
 </p>
 
 Ahora, para estimar la profundidad de los árboles se calcularon los errores medios cuadrados para tanto el conjunto de testeo como para el de entrenamiento, obteniendo así la siguiente imagen:
 
 <p align="center">
-  <img src="https://github.com/dfdiazc/IntroCienciaDatos3/blob/main/results/random_forests/error.png?raw=true">
+  <img src="https://github.com/dfdiazc/IntroCienciaDatos3/blob/main/results/error.png?raw=true">
 </p>
 
 A partir de esto, se determinó que la profundidad óptima de los árboles debería ser de 5. Una vez más, utilizando sklearn se realizó nuevamente el modelo ajustando este parámetro y se calcularon las siguientes importancias para cada uno de los parámetros del dataset, obteniendo el siguiente resultado:
 
 <p align="center">
-  <img src="https://github.com/dfdiazc/IntroCienciaDatos3/blob/main/results/random_forests/importances.png?raw=true">
+  <img src="https://github.com/dfdiazc/IntroCienciaDatos3/blob/main/results/importances.png?raw=true">
 </p>
 
 Con los valores específicos
 
 ```python
-men students             0.132948
-men professors           0.116183
-women professors         0.168497
-professors/doctorate     0.129184
-professors/masters       0.081003
-professors/bachelors     0.039378
-titular professors       0.056375
-associate professors     0.115335
-professor assistants     0.088444
-plant professors         0.022206
-instructor professors    0.021202
-emeritus professors      0.013317
-visitant professors      0.015928
+men students             0.110345
+men professors           0.139276
+women professors         0.239065
+professors/doctorate     0.087986
+professors/masters       0.050079
+professors/bachelors     0.029413
+titular professors       0.045629
+associate professors     0.129312
+professor assistants     0.087268
+plant professors         0.035533
+instructor professors    0.021254
+emeritus professors      0.019948
+visitant professors      0.004891
+```
+
+Así, utilizando el modelo obtenido se logró realizar una predicción para la cantidad de estudiantes mujeres dada una cantidad de profesoras, junto al resto de parámetros ya presentados, obteniendo así el siguiente resultado:
+
+<p align="center">
+  <img src="https://github.com/dfdiazc/IntroCienciaDatos3/blob/main/results/predictions.png?raw=true">
+</p>
+
+Con los siguientes parámetros de error:
+
+```python
+Mean Absolute Error: 94.45
+Mean Squared Error: 18637.06
+R-Squared Scores: 0.59
 ```
 
 ## Resultados
-Se obtuvo un modelo capaz de predecir, teniendo algunos datos sobre estudiantes y profesores, la cantidad de estudiantes mujeres que habrá en un semestre determinado. Asimismo, respondiendo la pregunta planteada inicialmente, esta cantidad sí es estadísticamente relevante en la cantidad de estudiantes mujeres que habrá en ese semestre, 2021-1 en este caso. Asimismo, se destaca la importancia que tienen tanto la cantidad de estudiantes hombres como la de profesores con doctorado, factores que, junto a la cantidad de profesoras, son los más relevantes para predecir correctamente la cantidad de estudiantes mujeres que habrá en un determinado semestre.
+Se obtuvo un modelo capaz de predecir, teniendo algunos datos sobre estudiantes y profesores, la cantidad de estudiantes mujeres que habrá en un semestre determinado. Asimismo, respondiendo la pregunta planteada inicialmente, esta cantidad sí es estadísticamente relevante en la cantidad de estudiantes mujeres que habrá en ese semestre, 2021-1 en este caso. Asimismo, se destaca la importancia que tienen tanto la cantidad de profesores hombres como la de profesores asociados, factores que, junto a la cantidad de profesoras, son los más relevantes para predecir correctamente la cantidad de estudiantes mujeres que habrá en un determinado semestre.
