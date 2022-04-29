@@ -4,6 +4,7 @@ Se presentan los resultados del Taller #3 del curso de Introducción a la Cienci
 ## Pregunta a Responder
 **Es estadisticamente influyente la cantidad de profesoras en la cantidad de estudiantes mujeres de un pregrado en la Universidad de los Andes en el primer semestre del 2021? Si la respuesta a esto es sí, qué tan influyente es comparado a otros parámetros?**
 <!--- https://towardsdatascience.com/train-a-regression-model-using-a-decision-tree-70012c22bcc1 --->
+<!--- https://www.datacareer.de/blog/random-forest-in-python-with-scikit-learn/ --->
 
 ## Datos Utilizados
 Los datos utilizados fueron tomados del Boletín Estadístico Uniandes 2021 disponible en el siguiente [enlace](https://planeacion.uniandes.edu.co/images/BoletinEstadistico/ComplementoEstadistico/SuplementoEstadistico2021.pdf). Un extracto del dataset utilizado se muestra a continuación:
@@ -71,9 +72,9 @@ Así, utilizando el modelo obtenido se logró realizar una predicción para la c
 Con los siguientes parámetros de error:
 
 ```python
-Mean Absolute Error: 94.45
-Mean Squared Error: 18637.06
-R-Squared Scores: 0.59
+Mean Absolute Error: 85.0
+Mean Squared Error: 14725.99
+R-Squared Scores: 0.67
 ```
 
 ## Resultados
