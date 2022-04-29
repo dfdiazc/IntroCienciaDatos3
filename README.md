@@ -73,7 +73,7 @@ Con los siguientes parámetros de error:
 ```python
 Mean Absolute Error: 94.45
 Mean Squared Error: 18637.06
-R squared scores: 0.59
+R-squared scores: 0.59
 ```
 
 ## Resultados
