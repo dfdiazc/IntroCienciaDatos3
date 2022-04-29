@@ -72,20 +72,20 @@ A partir de esto, se determinó que la profundidad óptima de los árboles deber
 Con los valores específicos
 
 ```python
-men students             0.125163
-men professors           0.131296
-women professors         0.205384
-professors/doctorate     0.046386
-professors/masters       0.086108
-professors/bachelors     0.029837
-titular professors       0.021236
-associate professors     0.158023
-professor assistants     0.176314
-plant professors         0.003836
-instructor professors    0.009130
-emeritus professors      0.002977
-visitant professors      0.004310
+men students             0.132948
+men professors           0.116183
+women professors         0.168497
+professors/doctorate     0.129184
+professors/masters       0.081003
+professors/bachelors     0.039378
+titular professors       0.056375
+associate professors     0.115335
+professor assistants     0.088444
+plant professors         0.022206
+instructor professors    0.021202
+emeritus professors      0.013317
+visitant professors      0.015928
 ```
 
 ## Resultados
-Se obtuvo un modelo capaz de predecir, teniendo algunos datos sobre estudiantes y profesores, la cantidad de estudiantes mujeres que habrá en un semestre determinado. Asimismo, respondiendo la pregunta planteada inicialmente, esta cantidad sí es estadísticamente relevante en la cantidad de estudiantes mujeres que habrá en ese semestre, 2021-1 en este caso. Asimismo, se destaca la importancia que tienen tanto la cantidad de profesores asistentes como la de profesores asociados, factores que, junto a la cantidad de profesoras, son los más relevantes para predecir correctamente la cantidad de estudiantes mujeres que habrá en un determinado semestre.
+Se obtuvo un modelo capaz de predecir, teniendo algunos datos sobre estudiantes y profesores, la cantidad de estudiantes mujeres que habrá en un semestre determinado. Asimismo, respondiendo la pregunta planteada inicialmente, esta cantidad sí es estadísticamente relevante en la cantidad de estudiantes mujeres que habrá en ese semestre, 2021-1 en este caso. Asimismo, se destaca la importancia que tienen tanto la cantidad de estudiantes hombres como la de profesores con doctorado, factores que, junto a la cantidad de profesoras, son los más relevantes para predecir correctamente la cantidad de estudiantes mujeres que habrá en un determinado semestre.
