@@ -71,9 +71,9 @@ Así, utilizando el modelo obtenido se logró realizar una predicción para la c
 Con los siguientes parámetros de error:
 
 ```python
-Mean Absolute Error: 94.45
-Mean Squared Error: 18637.06
-R-Squared Scores: 0.59
+Mean Absolute Error: 85.0
+Mean Squared Error: 14725.99
+R-Squared Scores: 0.67
 ```
 
 ## Resultados
